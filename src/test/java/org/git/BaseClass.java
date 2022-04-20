@@ -33,13 +33,13 @@ public class BaseClass
 	    
 	    // 1. browser launch
 	    
-	   // public WebDriver launchBrowser()
-	   //  {
-	   //        WebDriverManager.chromedriver().setup();
-	  //         driver=new ChromeDriver();
-	  //		 return driver;
-	          
-		//}
+	    public WebDriver launchBrowser()
+	     {
+	           WebDriverManager.chromedriver().setup();
+       driver=new ChromeDriver();
+		 return driver;
+          
+		}
 	    
 	    
 		//2.browser launch
@@ -47,48 +47,49 @@ public class BaseClass
 	        public static WebDriver launchBrowser(String browserName)
 	        {
 	        
-//	    {
-//	    	if(browserName.equalsIgnoreCase("chrome"))
-//	    	{
-//	    		 WebDriverManager.chromedriver().setup();
-//	             driver=new ChromeDriver();
-//	    	}
-//			
-//	    	else if(browserName.equalsIgnoreCase("firefox"))
-//	    	{
-//	    		WebDriverManager.firefoxdriver().setup();
-//	            driver=new FirefoxDriver();
-//	    	}
-//	    	
-//	    	else if(browserName.equalsIgnoreCase("edge"))
-//	    	{
-//	    		WebDriverManager.edgedriver().setup();
-//	            driver=new EdgeDriver();
-//	    	}
-//			return driver;
-	//
-//		}
-	    
-	     switch (browserName)
-	     {
-	     case "chrome":
-	     WebDriverManager.chromedriver().setup();
-	     driver=new ChromeDriver();
-	     break;
-	     
-	     case "firefox":
-	     WebDriverManager.firefoxdriver().setup();
-	     driver=new FirefoxDriver();
-	     break;
-	     
-	     case "edge":
-	    	 WebDriverManager.edgedriver().setup();
-	    	 driver=new EdgeDriver();
-	    	 break;
-	     }
-	     
-	        return driver;
+    {
+	    	if(browserName.equalsIgnoreCase("chrome"))
+	    	{
+	    		 WebDriverManager.chromedriver().setup();
+	             driver=new ChromeDriver();
+	    	}
+			
+	    	else if(browserName.equalsIgnoreCase("firefox"))
+	    	{
+	    		WebDriverManager.firefoxdriver().setup();
+	            driver=new FirefoxDriver();
+	    	}
+	    	
+	    	else if(browserName.equalsIgnoreCase("edge"))
+	    	{
+	    		WebDriverManager.edgedriver().setup();
+	            driver=new EdgeDriver();
+	    	}
+			return driver;
+	
 	}
+	        }
+//	    
+//	     switch (browserName)
+//	     {
+//	     case "chrome":
+//	     WebDriverManager.chromedriver().setup();
+//	     driver=new ChromeDriver();
+//	     break;
+//	     
+//	     case "firefox":
+//	     WebDriverManager.firefoxdriver().setup();
+//	     driver=new FirefoxDriver();
+//	     break;
+//	     
+//	     case "edge":
+//	    	 WebDriverManager.edgedriver().setup();
+//	    	 driver=new EdgeDriver();
+//	    	 break;
+//	     }
+//	     
+//	        return driver;
+//	}
 	        
 	        //url launch
 	        
