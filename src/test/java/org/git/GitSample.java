@@ -1,8 +1,8 @@
 package org.git;
 
 public class GitSample {
-	private void mai() {
-		System.out.println("Selenium");
+	private void main() {
+		System.out.println("Testngggg");
 
 		
 		
